@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React,{ Component } from 'react';
-
+import Description from './Description';
 
 class App extends React.Component {
     constructor(props) {
@@ -36,10 +36,17 @@ class App extends React.Component {
                         className='App-logo'
                         alt='logo'
                     />
-              {name}
-              <br />
-              {count}
-              <br />
+                    <Description
+                        name='Ökkeş Akkurt'
+                        url='https://www.linkedin.com/in/okkes-akkurt/'
+                        email="okkesakkurt46@gmail.com"
+
+                    />
+                    <br />
+                    {name}
+                    <br />
+                    {count}
+                    <br />
                     <button
                         onClick={() => {
                             this.incrementCount();
